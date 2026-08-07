@@ -306,32 +306,6 @@
   .btn:hover .trace-bottom{ width: 100%; }
   .btn:hover .trace-left{ height: 100%; }
 
-  /* ---------- STAT STRIP ---------- */
-  .stat-strip{
-    border-bottom: 1px solid var(--border);
-    padding: 32px 0;
-  }
-  .stat-grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-  }
-  .stat{ text-align: left; }
-  .stat-num{
-    font-family: var(--font-display);
-    font-size: clamp(22px, 3vw, 30px);
-    font-weight: 600;
-    color: var(--accent);
-    line-height: 1.1;
-  }
-  .stat-label{
-    font-family: var(--font-mono);
-    font-size: 11px;
-    color: var(--text-muted);
-    letter-spacing: 0.02em;
-    margin-top: 6px;
-  }
-
   /* ---------- SECTION SHELL ---------- */
   section{ padding: 72px 0; border-bottom: 1px solid var(--border); }
   section:last-of-type{ border-bottom: none; }
@@ -376,18 +350,6 @@
     margin-bottom: var(--gap-card);
   }
   .exp-item:last-child{ margin-bottom: 0; }
-  .exp-item::before{
-    content: '';
-    position: absolute;
-    left: 41px;
-    top: 33px;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background: var(--bg);
-    border: 2px solid var(--accent);
-    z-index: 1;
-  }
   .exp-num{
     font-family: var(--font-mono);
     font-size: 12px;
@@ -565,13 +527,8 @@
     .mini-nav{ transition: none; }
   }
 
-  @media (max-width: 700px){
-    .stat-grid{ grid-template-columns: repeat(2, 1fr); gap: 20px 16px; }
-  }
-
   @media (max-width: 600px){
     .exp-timeline::before{ display: none; }
-    .exp-item::before{ display: none; }
     .exp-item{ grid-template-columns: 1fr; gap: 10px; padding: 22px; }
     .exp-num{ display:flex; align-items:baseline; gap:8px; }
     .exp-num .n{ margin-top:0; }
@@ -608,7 +565,7 @@
       <span class="tag">Leadership</span>
     </div>
     <div class="btn-row">
-      <a class="btn btn-primary" href="assets/Anthony-Teslenko-Business-Operations.pdf" target="_blank" rel="noopener">
+      <a class="btn btn-primary" href="assets/Anthony-Teslenko-Resume.pdf" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6"></path></svg>
         Resume
       </a>
@@ -623,29 +580,6 @@
     </div>
   </div>
 </header>
-
-<div class="stat-strip">
-  <div class="wrap">
-    <div class="stat-grid">
-      <div class="stat">
-        <div class="stat-num">60+</div>
-        <div class="stat-label mono">WORKFLOWS DOCUMENTED</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">90%</div>
-        <div class="stat-label mono">ERROR REDUCTION</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">3+ HRS</div>
-        <div class="stat-label mono">SAVED / INQUIRY</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">15</div>
-        <div class="stat-label mono">ENGINEERS LED</div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <main id="main">
 
